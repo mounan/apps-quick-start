@@ -1,6 +1,6 @@
 module.exports = {
   identifier: "getting-started",
-  name: "Getting Started",
+  name: "Lyre-AI",
   baseUrl: process.env.BASE_URL,
   logo: "/logo.svg",
   authentication: {
@@ -16,7 +16,7 @@ module.exports = {
     "project-menu": [
       {
         key: "menu",
-        name: "Getting Started",
+        name: "Lyre-AI",
         url: "/project-menu"
       }
     ],

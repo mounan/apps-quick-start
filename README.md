@@ -6,7 +6,7 @@
   </picture>
 </p>
 
-# Getting Started with Crowdin Apps
+# Lyre-AI with Crowdin Apps
 
 Join the growing localization management platform! Build apps for all the teams already using Crowdin or Crowdin Enterprise to customize and extend localization experience. By creating Crowdin apps, developers can integrate existing services with Crowdin, add new features, upload and manage content.
 
@@ -51,6 +51,6 @@ For more information about using Node.js on Heroku, see these Dev Center article
 
 - [Crowdin Developers Portal](https://developers.crowdin.com/)
 - [Quick Start](https://developer.crowdin.com/crowdin-apps-quick-start)
-- [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Lyre-AI on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
 - [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)

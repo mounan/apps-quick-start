@@ -3,12 +3,6 @@ const manifest = require("./manifest");
 
 const router = express.Router();
 
-router.get("/", (req, res) => res.render("index", { baseUrl: process.env.BASE_URL }));
-
-router.get("/manifest.json", (req, res) => res.json(manifest));
-
-router.get("/project-menu/", authorizeUser, (req, res) => res.render("project-menu", { isAuthorized: res.locals.isAuthorized }));
-
 const { Organization } = require("./db");
 const { default: axios } = require("axios");
 
@@ -118,6 +112,12 @@ router.get("/user", authorizeUser, async (req, res) => {
     });
   }
 });
+
+router.get("/", (req, res) => res.render("index", { baseUrl: process.env.BASE_URL }));
+
+router.get("/manifest.json", (req, res) => res.json(manifest));
+
+router.get("/project-menu/", authorizeUser, (req, res) => res.render("project-menu", { isAuthorized: res.locals.isAuthorized }));
 
 
 module.exports = router;

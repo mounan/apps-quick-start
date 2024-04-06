@@ -18,4 +18,9 @@ app
   .use(express.static(path.join(__dirname, "public")))
   .use(router);
 
-app.listen(port, () => console.log(`Listening on ${ port }`))
+  const { sequelize } = require("./db");
+
+  sequelize.sync().then(
+    () => app.listen(port, () => console.log(`Listening on ${ port }`))
+  );
+  

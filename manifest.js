@@ -4,10 +4,13 @@ module.exports = {
   baseUrl: process.env.BASE_URL,
   logo: "/logo.svg",
   authentication: {
-    type: "none",
-    clientId: null
+    type: "crowdin_app",
+    clientId: process.env.CLIENT_ID
   },
-  events: {},
+  events: {
+    installed: "/installed",
+    uninstall: "/uninstall",
+  },  
   scopes: ["project"],
   modules: {
     "project-menu": [
